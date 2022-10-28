@@ -1,0 +1,91 @@
+body {
+    width: 60em;
+    margin: 30px auto;
+}
+.circle{
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: white;
+}
+section{
+    border: 5px none rgb(195, 195, 195);
+    border-radius: 20px;
+    height: fit-content;
+    width: 300px;
+    background-color: rgb(195, 195, 195);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img[alt="three dots"]{
+    width: 40px;
+    align-self: center;
+    position: relative;
+    right: -90px;
+}
+section >div:first-child{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-self: flex-start;
+    width: 96%;
+}
+.comment img{
+    width: 20px;
+    height: 20px;
+    size: 100%;
+}
+.comment{
+    padding-left: 20px;
+    align-self: flex-start;
+    display: flex;
+    margin-top: 13px;
+    margin-bottom: -5px;
+    gap: 10px;
+}
+section >div:last-child{
+    padding: 0px 5px 0px 5px;
+}
+img[alt="cat-01"]{
+    width: 100%;
+    height: 230px;
+}
+
+p{
+    text-align: justify;
+ }
+#white{
+    color: rgb(255, 255, 255);
+    font-size: 14px !important;
+}
+.font-plus{
+    font-size: 1.2em;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@media(max-width: 768px){
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+}
+}
+@media(max-width: 375px){
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+}
+}
